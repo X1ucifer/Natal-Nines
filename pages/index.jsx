@@ -40,7 +40,7 @@ export default function CaseStudyShowcase() {
     {
       title: 'Digital <br />Marketing',
       imgUrl: '/marketing/2.jpg',
-      href: '/case-study-details',
+      href: '/digitalmarketing',
     },
   ];
   return (
