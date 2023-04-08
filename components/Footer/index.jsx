@@ -20,19 +20,19 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
 
   const serviceMenu = [
     {
-      title: 'UI/UX design',
+      title: 'UI/UX Design',
       href: '/service/service-details',
     },
     {
-      title: 'WP development',
+      title: 'Web Application Development',
       href: '/service/service-details',
     },
     {
-      title: 'Digital marketing',
+      title: 'Digital Marketing',
       href: '/service/service-details',
     },
     {
-      title: 'React development',
+      title: 'Cloud Development',
       href: '/service/service-details',
     },
   ];
@@ -47,7 +47,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
                 <TextWidget
                   logoSrc="/images/footer_logo.svg"
                   logoAlt="Logo"
-                  text="Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium."
+                  text="It's not about ideas. It's about making ideas happen."
                 />
                 <SocialWidget />
               </Div>
@@ -66,8 +66,8 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
               <Div className="cs-footer_item">
                 <Newsletter
                   title="Subscribe"
-                  subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
-                  placeholder="example@gmail.com"
+                  subtitle=" "
+                  placeholder="Your Email..."
                 />
               </Div>
             </Div>
@@ -77,7 +77,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
       <Div className="container">
         <Div className="cs-bottom_footer">
           <Div className="cs-bottom_footer_left">
-            <Div className="cs-copyright">Copyright © 2022 Laralink.</Div>
+            <Div className="cs-copyright">Copyright © 2023 NATAL NINE IT SOLUTIONS.</Div>
           </Div>
           <Div className="cs-bottom_footer_right">
             <MenuWidget menuItems={copyrightLinks} variant=" cs-style2" />

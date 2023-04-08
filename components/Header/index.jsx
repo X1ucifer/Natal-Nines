@@ -109,7 +109,10 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                    <li className="menu-item-has-children">
+
+
+
+                    {/* <li className="menu-item-has-children">
                       <Link href="/blog" onClick={() => setMobileToggle(false)}>
                         Blog
                       </Link>
@@ -133,10 +136,10 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
+                    </li> */}
                     <li className="menu-item-has-children">
                       <Link href="/" onClick={() => setMobileToggle(false)}>
-                        Pages
+                        Contact
                       </Link>
                       <DropDown>
                         <ul>
@@ -145,33 +148,33 @@ export default function Header({ variant }) {
                               href="/contact"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Contact
+                              Contact Us
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link
                               href="/team"
                               onClick={() => setMobileToggle(false)}
                             >
                               Team
                             </Link>
-                          </li>
-                          <li>
+                          </li> */}
+                          {/* <li>
                             <Link
                               href="/team/team-details"
                               onClick={() => setMobileToggle(false)}
                             >
                               Team Details
                             </Link>
-                          </li>
-                          <li>
+                          </li> */}
+                          {/* <li>
                             <Link
                               href="/case-study-details"
                               onClick={() => setMobileToggle(false)}
                             >
                               Case Study Details
                             </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link
                               href="/faq"
@@ -245,8 +248,8 @@ export default function Header({ variant }) {
           <Div className="cs-side_header_box">
             <Newsletter
               title="Subscribe"
-              subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
-              placeholder="example@gmail.com"
+              subtitle=" "
+              placeholder="Your Email...."
             />
           </Div>
           <Div className="cs-side_header_box">
@@ -257,3 +260,4 @@ export default function Header({ variant }) {
     </>
   );
 }
+

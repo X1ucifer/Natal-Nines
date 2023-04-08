@@ -13,11 +13,11 @@ export default function About() {
   const funfaceData = [
     {
       title: 'Global Happy Clients',
-      factNumber: '40K',
+      factNumber: '10K',
     },
     {
       title: 'Project Completed',
-      factNumber: '50K',
+      factNumber: '35K',
     },
     {
       title: 'Team Members',
@@ -45,21 +45,18 @@ export default function About() {
         {/* End Page Heading Section */}
 
         {/* Start About Section */}
-        <Spacing lg="150" md="80" />
+        <Spacing lg="40" md="80" />
         <Div className="container">
           <Div className="row">
-            <Div className="col-xl-5 col-lg-7">
+            <Div className="col-xl-5 col-lg-6">
               <SectionHeading
                 title="Your trusted partner for business"
                 subtitle="About Our Agency"
               >
                 <Spacing lg="30" md="20" />
                 <p className="cs-m0">
-                  This is the main factor that sets us apart from our
-                  competition and allows us to deliver a specialist business
-                  consultancy service. Our team applies its wide-ranging
-                  experience to determining. Through our years of experience,
-                  we’ve also learned that while each channel.
+                Natal Nine is a leading IT solutions agency that helps partner clients' growth to help them achieve their business goals through innovative technology solutions. With expertise in web development, mobile app development, blockchain development, and digital marketing, we provide customized solutions for clients across various industries. 
+
                 </p>
                 <Spacing lg="30" md="30" />
                 <Div className="cs-separator cs-accent_bg"></Div>
@@ -68,23 +65,23 @@ export default function About() {
             </Div>
             <Div className="col-lg-5 offset-xl-2">
               <img
-                src="/images/about_img_1.jpeg"
+                src="/images/abt1.jpg"
                 alt="About"
                 className="w-100 cs-radius_15"
               />
               <Spacing lg="25" md="25" />
             </Div>
-            <Div className="col-lg-7">
+            <Div className="col-lg-6">
               <img
-                src="/images/about_img_2.jpeg"
+                src="/images/ab3.jpg"
                 alt="About"
                 className="w-100 cs-radius_15"
               />
               <Spacing lg="25" md="25" />
             </Div>
-            <Div className="col-lg-5">
+            <Div className="col-lg-6">
               <img
-                src="/images/about_img_3.jpeg"
+                src="/images/abt2.jpg"
                 alt="About"
                 className="w-100 cs-radius_15"
               />
@@ -113,7 +110,7 @@ export default function About() {
               <Div className="cs-image_layer cs-style1">
                 <Div className="cs-image_layer_in">
                   <img
-                    src="/images/about_img_4.jpeg"
+                    src="/images/ch1.jpg"
                     alt="About"
                     className="w-100 cs-radius_15"
                   />
@@ -151,7 +148,7 @@ export default function About() {
         {/* End Why Choose Section */}
 
         {/* Start Team Section */}
-        <Spacing lg="145" md="80" />
+        {/* <Spacing lg="145" md="80" />
         <Div className="container">
           <SectionHeading
             title="Awesome team <br/>members"
@@ -160,7 +157,7 @@ export default function About() {
           />
           <Spacing lg="85" md="45" />
           <TeamSlider />
-        </Div>
+        </Div> */}
         {/* End Team Section */}
 
         {/* Start CTA Section */}

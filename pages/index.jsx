@@ -35,12 +35,12 @@ export default function CaseStudyShowcase() {
     {
       title: 'Mobile App <br />Development',
       imgUrl: '/mobile/2.jpg',
-      href: '/case-study-details',
+      href: '/mobile-application-development',
     },
     {
       title: 'Digital <br />Marketing',
       imgUrl: '/marketing/2.jpg',
-      href: '/digitalmarketing',
+      href: '/digital-marketing',
     },
   ];
   return (
