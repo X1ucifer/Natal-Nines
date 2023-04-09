@@ -13,9 +13,11 @@ export default function Hero({
   heroSocialLinks,
   bgImageUrl,
 }) {
+  // style={{ backgroundImage: `url(${bgImageUrl})` }}  cs-fixed_bg
+
   return (
     <Div
-      className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1"
+      className="cs-hero cs-style1 cs-bg  cs-shape_wrap_1"
       style={{ backgroundImage: `url(${bgImageUrl})` }}
     >
       <Div className="cs-shape_1" />

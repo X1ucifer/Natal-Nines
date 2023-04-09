@@ -21,7 +21,7 @@ export default function Portfolio3({
             <Spacing lg="0" md="35" />
             <Div className="cs-section_heading cs-style1">
               <h3 className="cs-section_subtitle">{subtitle}</h3>
-              <h2 className="cs-section_title">{title}</h2>
+              <h2 className="">{title}</h2>
               <Spacing lg="45" md="20" />
               <span
                 onMouseEnter={() => setHovered(true)}
