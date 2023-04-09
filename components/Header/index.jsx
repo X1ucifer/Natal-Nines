@@ -53,14 +53,14 @@ export default function Header({ variant }) {
                         About
                       </Link>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li>
                       <Link
                         href="/service"
                         onClick={() => setMobileToggle(false)}
                       >
                         Services
                       </Link>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link
@@ -79,16 +79,16 @@ export default function Header({ variant }) {
                             </Link>
                           </li>
                         </ul>
-                      </DropDown>
+                      </DropDown> */}
                     </li>
-                    <li className="menu-item-has-children">
+                    <li >
                       <Link
                         href="/portfolio"
                         onClick={() => setMobileToggle(false)}
                       >
                         Portfolio
                       </Link>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link
@@ -107,7 +107,7 @@ export default function Header({ variant }) {
                             </Link>
                           </li>
                         </ul>
-                      </DropDown>
+                      </DropDown> */}
                     </li>
 
 

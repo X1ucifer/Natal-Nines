@@ -43,7 +43,7 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6">
                     <Card
                       title="Mobile App Development"
-                      link="/service/ui-ux-design"
+                      link="/mobile-application-development"
                       src="/images/bbl.jpg"
                       alt="Services provided by natalnine"
                     />
@@ -53,7 +53,7 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6">
                     <Card
                       title="Web App Development"
-                      link="/service/reactjs-development"
+                      link="/web-application-development"
                       src="/images/wb-ev.png"
                       alt="Services provided by natalnine"
                     />
@@ -62,7 +62,7 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6">
                     <Card
                       title="Digital Marketing"
-                      link="/service/digital-marketing"
+                      link="/digital-marketing"
                       src="/images/digi.png"
                       alt="Services provided by natalnine"
                     />
@@ -72,7 +72,7 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6">
                     <Card
                       title="Cloud & DevOps"
-                      link="/service/technology"
+                      link=" "
                       src="/images/cloudd.jpg"
                       alt="Services provided by natalnine"
                     />
@@ -83,7 +83,7 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6">
                     <Card
                       title="Block Chain Development"
-                      link="/service/consultancy"
+                      link="/blockchain"
                       src="/images/blk.jpg"
                       alt="Services provided by natalnine"
                     />
@@ -93,7 +93,7 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6">
                     <Card
                       title="SEO"
-                      link="/service/creative-design"
+                      link="/digital-marketing"
                       src="/images/seeo.jpg"
                       alt="Services provided by natalnine"
                     />
@@ -105,14 +105,14 @@ export default function Service() {
           </Div>
         </Div>
         <Spacing lg="150" md="80" />
-        <Div className="container">
+        {/* <Div className="container">
           <SectionHeading
             title="Providing best <br/>pricing for client"
             subtitle="Pricing & Packaging"
           />
           <Spacing lg="85" md="40" />
           <PricingTableList />
-        </Div>
+        </Div> */}
         <Spacing lg="125" md="55" />
         <TestimonialSlider />
         <Spacing lg="150" md="80" />
