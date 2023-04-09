@@ -9,7 +9,7 @@ export default function TestimonialSlider() {
   const [nav2, setNav2] = useState();
   const testimonialData = [
     {
-      testimonialThumb: '/images/testimonial_1.jpeg',
+      testimonialThumb: '/avatar.jpg',
       testimonialText:
         'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
       avatarName: 'Ahon Monsery',
@@ -17,7 +17,7 @@ export default function TestimonialSlider() {
       ratings: '4',
     },
     {
-      testimonialThumb: '/images/testimonial_2.jpeg',
+      testimonialThumb: '/avatar.jpg',
       testimonialText:
         'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
       avatarName: 'Ahon Monsery',
@@ -25,7 +25,7 @@ export default function TestimonialSlider() {
       ratings: '5',
     },
     {
-      testimonialThumb: '/images/testimonial_3.jpeg',
+      testimonialThumb: '/avatar.jpg',
       testimonialText:
         'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
       avatarName: 'Ahon Monsery',
@@ -33,7 +33,7 @@ export default function TestimonialSlider() {
       ratings: '4.5',
     },
     {
-      testimonialThumb: '/images/testimonial_1.jpeg',
+      testimonialThumb: '/avatar.jpg',
       testimonialText:
         'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
       avatarName: 'Ahon Monsery',
@@ -70,9 +70,9 @@ export default function TestimonialSlider() {
     <>
       <Div className="cs-gradient_bg_1 cs-shape_wrap_3 cs-parallax">
         <Spacing lg="130" md="80" />
-        <Div className="cs-shape_3 cs-to_up">
+        {/* <Div className="cs-shape_3 cs-to_up">
           <img src="/images/shape_1.svg" alt="Shape" />
-        </Div>
+        </Div> */}
         <Div className="container">
           <Div className="cs-testimonial_slider">
             <Div className="cs-testimonial_slider_left">

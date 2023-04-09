@@ -16,7 +16,7 @@ export default function ContactInfoWidget({withIcon, title}) {
         </li>
         <li>
           {withIcon?<span className='cs-accent_color'><Icon icon="mdi:map-marker" /></span>:''}
-          50 Wall Street Suite, 44150 <br/>Ohio, United States
+          Marthandam, kappukadu(P.O) <br/>629162
         </li>
       </ul>
     </>
