@@ -1,14 +1,52 @@
 import { Icon } from '@iconify/react';
 import Head from 'next/head';
-import React from 'react';
+import React, { useState } from 'react';
 import Div from '../components/Div';
 import Layout from '../components/Layout';
 import PageHeading from '../components/PageHeading';
 import SectionHeading from '../components/SectionHeading';
 import Spacing from '../components/Spacing';
 import ContactInfoWidget from '../components/Widget/ContactInfoWidget';
+import axios from 'axios';
+
 
 export default function Contact() {
+
+
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [projectType, setProjectType] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [message, setMessage] = useState('');
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = { fullName, email, projectType, mobile, message };
+
+    console.log(formData)
+    
+
+    axios.post('/api/send_mail', {
+      fullName,
+      receiver:email,
+      projectType,
+      mobile,
+      message,
+    })
+      .then((response) => {
+        console.log(response.data);
+        alert('Message sent successfully');
+      })
+      .catch((error) => {
+        console.log(error);
+        alert('An error occurred. Please try again later.');
+      });
+
+
+  }
+
+
   return (
     <>
       <Head>
@@ -35,38 +73,37 @@ export default function Contact() {
               <Spacing lg="0" md="50" />
             </Div>
             <Div className="col-lg-6">
-              <form action="#" className="row">
+              <form action="#" className="row" onSubmit={handleSubmit}>
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Full Name*</label>
-                  <input type="text" className="cs-form_field" />
+                  <input type="text" className="cs-form_field" value={fullName} onChange={(e) => setFullName(e.target.value)} />
+
                   <Spacing lg="20" md="20" />
                 </Div>
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Email*</label>
-                  <input type="text" className="cs-form_field" />
+                  <input type="text" className="cs-form_field" value={email} onChange={(e) => setEmail(e.target.value)} />
                   <Spacing lg="20" md="20" />
                 </Div>
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Project Type*</label>
-                  <input type="text" className="cs-form_field" />
+                  <input type="text" className="cs-form_field" value={projectType} onChange={(e) => setProjectType(e.target.value)} />
                   <Spacing lg="20" md="20" />
                 </Div>
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Mobile*</label>
-                  <input type="text" className="cs-form_field" />
+                  <input type="text" className="cs-form_field" value={mobile} onChange={(e) => setMobile(e.target.value)} />
                   <Spacing lg="20" md="20" />
                 </Div>
                 <Div className="col-sm-12">
                   <label className="cs-primary_color">Message*</label>
-                  <textarea
-                    cols="30"
-                    rows="7"
-                    className="cs-form_field"
-                  ></textarea>
+                  <textarea cols="30" rows="7" className="cs-form_field" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+
                   <Spacing lg="25" md="25" />
                 </Div>
                 <Div className="col-sm-12">
-                  <button className="cs-btn cs-style1">
+                  <button className="cs-btn cs-style1" type="submit" disabled={!fullName || !email || !projectType || !mobile || !message}
+                  >
                     <span>Send Message</span>
                     <Icon icon="bi:arrow-right" />
                   </button>
