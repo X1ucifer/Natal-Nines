@@ -10,34 +10,33 @@ export default function TestimonialSlider() {
   const testimonialData = [
     {
       testimonialThumb: '/avatar.jpg',
-      testimonialText:
-        'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
-      avatarName: 'Ahon Monsery',
-      avatarDesignation: 'CEO AT TECH',
+      testimonialText:'Working with Natal Nine, has been a game-changer for my eCommerce business. Their IT solutions have significantly improved our websites performance, and their teams support has been excellent. Theyre always available to address any concerns we have promptly. I highly recommend their services to anyone looking for reliable and effective IT solutions.',
+      avatarName: 'Shijok',
+      avatarDesignation: 'MANAGER AT SPOTD2D',
       ratings: '4',
     },
     {
       testimonialThumb: '/avatar.jpg',
       testimonialText:
-        'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
-      avatarName: 'Ahon Monsery',
-      avatarDesignation: 'CEO AT TECH',
+        'Natal Nine has transformed the way we deliver online training. Their LMS platform is user-friendly and has all the features we need to manage our e-learning programs. Our learners love the interactive courses, and our trainers appreciate the real-time tracking and reporting. We highly recommend Natal Nine to any organisation looking to enhance their training programs.',
+      avatarName: 'Royal',
+      avatarDesignation: 'Spyberrys',
       ratings: '5',
     },
     {
       testimonialThumb: '/avatar.jpg',
       testimonialText:
-        'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
-      avatarName: 'Ahon Monsery',
-      avatarDesignation: 'CEO AT TECH',
+        'Natal Nine IT Solutions helped us develop a robust and scalable software application that has been instrumental in the growth of our business. The team is highly skilled and professional, and their attention to detail is exceptional. I would highly recommend Natal Nine IT Solutions to anyone looking for top-quality IT solutions',
+      avatarName: 'Aleena',
+      avatarDesignation: 'Exaland',
       ratings: '4.5',
     },
     {
       testimonialThumb: '/avatar.jpg',
       testimonialText:
-        'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
-      avatarName: 'Ahon Monsery',
-      avatarDesignation: 'CEO AT TECH',
+        'Working with Natal Nine IT Solutions was an absolute pleasure. Their team of developers is highly knowledgeable, and they were able to quickly and efficiently develop the software we needed. Their customer service is outstanding, and they always went above and beyond to make sure we were completely satisfied with their work. I would highly recommend Natal Nine IT Solutions to anyone looking for a reliable IT partner.',
+      avatarName: 'Magesh',
+      avatarDesignation: '',
       ratings: '3.5',
     },
   ];
