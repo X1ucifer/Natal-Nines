@@ -44,8 +44,8 @@ export default function Service() {
                     <Card
                       title="Mobile App Development"
                       link="/service/ui-ux-design"
-                      src="/images/ui-ux-11.jpg"
-                      alt="Service"
+                      src="/images/bbl.jpg"
+                      alt="Services provided by natalnine"
                     />
                     <Spacing lg="0" md="30" />
                   </Div>
@@ -55,7 +55,7 @@ export default function Service() {
                       title="Web App Development"
                       link="/service/reactjs-development"
                       src="/images/wb-ev.png"
-                      alt="Service"
+                      alt="Services provided by natalnine"
                     />
                     <Spacing lg="0" md="30" />
                   </Div>
@@ -63,8 +63,8 @@ export default function Service() {
                     <Card
                       title="Digital Marketing"
                       link="/service/digital-marketing"
-                      src="/images/service_3.jpeg"
-                      alt="Service"
+                      src="/images/digi.png"
+                      alt="Services provided by natalnine"
                     />
                     <Spacing lg="0" md="30" />
                   </Div>
@@ -73,8 +73,8 @@ export default function Service() {
                     <Card
                       title="Cloud & DevOps"
                       link="/service/technology"
-                      src="/images/service_4.jpeg"
-                      alt="Service"
+                      src="/images/cloudd.jpg"
+                      alt="Services provided by natalnine"
                     />
                     <Spacing lg="0" md="30" />
                   </Div>
@@ -82,20 +82,20 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                   <Div className="col-lg-3 col-sm-6">
                     <Card
-                      title="Consultancy"
+                      title="Block Chain Development"
                       link="/service/consultancy"
-                      src="/images/service_5.jpeg"
-                      alt="Service"
+                      src="/images/blk.jpg"
+                      alt="Services provided by natalnine"
                     />
                     <Spacing lg="0" md="30" />
                   </Div>
                   <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                   <Div className="col-lg-3 col-sm-6">
                     <Card
-                      title="Creative Design"
+                      title="SEO"
                       link="/service/creative-design"
-                      src="/images/service_6.jpeg"
-                      alt="Service"
+                      src="/images/seeo.jpg"
+                      alt="Services provided by natalnine"
                     />
                     <Spacing lg="0" md="30" />
                   </Div>
