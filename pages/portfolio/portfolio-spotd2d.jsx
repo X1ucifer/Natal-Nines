@@ -35,23 +35,14 @@ export default function PortfolioDetails() {
           <Spacing lg="90" md="40" />
           <Div className="row">
             <Div className="col-lg-6">
-              <SectionHeading title="Graffiti wall artwork" subtitle="Creative">
+              <SectionHeading title="Spotd2d" subtitle="Creative">
                 <Spacing lg="40" md="20" />
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium voltire doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi
-                  architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                  voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                  sed quia consequuntur magni dolores eos qui ratione voluptatem
-                  sequi nesciunt.
+                Spotd2d is a fantastic food application created by Natalnine that offers users a seamless food ordering experience. With Spotd2d, customers can easily browse through an extensive collection of restaurants and their menus, select their favourite dishes, and place orders with just a few taps. 
                 </p>
                 <Spacing lg="10" md="10" />
                 <p>
-                  Ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-                  quia non numquam eius modi tempora incidunt ut labore et
-                  dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                  veniam, quis nostrum exercitationem ullam corporis suscipit.
+                The app also allows users to customise their orders, track their delivery status in real-time, and provide feedback. With its user-friendly interface and impressive features, Spotd2d is a must-have application for anyone who loves delicious food and convenience.
                 </p>
               </SectionHeading>
             </Div>
@@ -64,28 +55,28 @@ export default function PortfolioDetails() {
                   <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                     Category:
                   </h3>
-                  <p className="cs-m0">Artwork</p>
+                  <p className="cs-m0">Ecommerce</p>
                   <Spacing lg="30" md="30" />
                 </Div>
                 <Div className="col-6">
                   <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                     Location:
                   </h3>
-                  <p className="cs-m0">United Kindom</p>
+                  <p className="cs-m0">KanyaKumari </p>
                   <Spacing lg="30" md="30" />
                 </Div>
                 <Div className="col-6">
                   <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
-                    Software:
+                    Technology
                   </h3>
-                  <p className="cs-m0">Adobe Illustrator</p>
+                  <p className="cs-m0">Laravel</p>
                   <Spacing lg="30" md="30" />
                 </Div>
                 <Div className="col-6">
                   <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                     Dated:
                   </h3>
-                  <p className="cs-m0">14-Aug-2022</p>
+                  <p className="cs-m0">Feb 2023</p>
                   <Spacing lg="30" md="30" />
                 </Div>
                 <Div className="col-6">
