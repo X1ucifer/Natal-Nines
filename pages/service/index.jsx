@@ -42,9 +42,9 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                   <Div className="col-lg-3 col-sm-6">
                     <Card
-                      title="UI/UX design"
+                      title="Mobile App Development"
                       link="/service/ui-ux-design"
-                      src="/images/service_1.jpeg"
+                      src="/images/ui-ux-11.jpg"
                       alt="Service"
                     />
                     <Spacing lg="0" md="30" />
@@ -52,9 +52,9 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                   <Div className="col-lg-3 col-sm-6">
                     <Card
-                      title="React.js Development"
+                      title="Web App Development"
                       link="/service/reactjs-development"
-                      src="/images/service_2.jpeg"
+                      src="/images/wb-ev.png"
                       alt="Service"
                     />
                     <Spacing lg="0" md="30" />
@@ -71,7 +71,7 @@ export default function Service() {
                   <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                   <Div className="col-lg-3 col-sm-6">
                     <Card
-                      title="Technology"
+                      title="Cloud & DevOps"
                       link="/service/technology"
                       src="/images/service_4.jpeg"
                       alt="Service"

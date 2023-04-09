@@ -120,23 +120,16 @@ export default function About() {
             </Div>
             <Div className="col-xl-5 offset-xl-1 col-lg-6">
               <SectionHeading
-                title="Highly experienced pepole with us"
-                subtitle="Why Choose Us"
+                title="Why Choose Us"
+                subtitle=" "
               >
                 <Spacing lg="30" md="20" />
                 <p className="cs-m0">
-                  This is the main factor that sets us apart from our
-                  competition and allows us to deliver a specialist business
-                  consultancy service. Our team applies its wide-ranging
-                  experience to determining. Through our years of experience,
-                  we’ve also learned that while each channel.
+                At our IT solutions company, we pride ourselves on being a one-stop-shop for all your digital needs. What sets us apart from the competition is our commitment to delivering top-quality services that are customised to meet the unique needs of your business. 
                 </p>
                 <Spacing lg="15" md="15" />
                 <p className="cs-m0">
-                  This is the main factor that sets us apart from our
-                  competition and allows us to deliver a specialist business
-                  consultancy service. Our team applies its wide-ranging
-                  experience to determining.
+                Whether you're a startup or an established enterprise, we have the knowledge and expertise to help you succeed in today's competitive digital landscape. Choose us for reliable, efficient, and innovative solutions that will take your business to the next level.
                 </p>
                 <Spacing lg="30" md="30" />
                 <Div className="cs-separator cs-accent_bg"></Div>

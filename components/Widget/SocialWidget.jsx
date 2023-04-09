@@ -14,7 +14,7 @@ export default function SocialWidget() {
       <Link href="/" className="cs-center">
         <Icon icon="fa6-brands:youtube" />
       </Link>
-      <Link href="/" className="cs-center">
+      <Link href="https://www.instagram.com/natalnine/" className="cs-center">
         <Icon icon="fa6-brands:slack" />
       </Link>
     </Div>

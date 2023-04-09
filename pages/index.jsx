@@ -31,7 +31,7 @@ export default function CreativePortfolio() {
       title: 'Modern Web Development: Dynamic, Responsive, and Fast.',
       subtitle: 'Web Development',
       btnText: 'See Details',
-      btnLink: '/portfolio/portfolio-details',
+      btnLink: '/web-application-development',
       imageUrl: '/webdev/2.jpg',
       category: 'Web Development',
     },
