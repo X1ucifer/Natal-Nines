@@ -32,8 +32,8 @@ export default function Header({ variant }) {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" href="/">
-                  {/* <img src="/images/logo.svg" alt="Logo" /> */}
-                  <span style={{fontSize:"20px",display:"flex",alignItems:"center"}}>Natal Nines</span>
+                  <img src="/images/logo1.png" alt="Logo" />
+                  {/* <span style={{fontSize:"20px",display:"flex",alignItems:"center"}}>Natal Nines</span> */}
                 </Link>
               </Div>
               <Div className="cs-main_header_center">
