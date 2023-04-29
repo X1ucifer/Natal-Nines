@@ -40,7 +40,7 @@ export default function CreativePortfolio() {
       subtitle: 'Blockchain Development',
       btnText: 'See Details',
       btnLink: '/blockchain',
-      imageUrl: '/blockchain/1.jpg',
+      imageUrl: '/images/blockchain.jpg',
       category: 'Blockchain',
     },
     {
@@ -48,7 +48,7 @@ export default function CreativePortfolio() {
       subtitle: 'Mobile App Development',
       btnText: 'See Details',
       btnLink: '/mobile-application-development',
-      imageUrl: '/mobile/2.jpg',
+      imageUrl: '/images/mobileapp.jpg',
       category: 'Mobile App',
     },
     {
@@ -56,7 +56,7 @@ export default function CreativePortfolio() {
       subtitle: 'Digital Marketing',
       btnText: 'See Details',
       btnLink: '/digital-marketing',
-      imageUrl: '/marketing/2.jpg',
+      imageUrl: '/images/digitalmarketing.jpg',
       category: 'Digital Marketing',
     },
   ];
@@ -86,7 +86,7 @@ export default function CreativePortfolio() {
           scrollDownId="#service"
           socialLinksHeading="Follow Us"
           heroSocialLinks={heroSocialLinks}
-          bgImageUrl="/images/hero_bg.jpeg"
+          bgImageUrl="/images/bg2.jpg"
         />
         {/* End Hero Section */}
 

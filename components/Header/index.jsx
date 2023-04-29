@@ -5,6 +5,7 @@ import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import Div from '../Div';
 import DropDown from './DropDown';
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function Header({ variant }) {
   const [isSticky, setIsSticky] = useState(false);
@@ -32,7 +33,7 @@ export default function Header({ variant }) {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" href="/">
-                  <img src="/images/logo1.png" alt="Logo" />
+                  <img src="/images/nn.png" alt="Logo" />
                   {/* <span style={{fontSize:"20px",display:"flex",alignItems:"center"}}>Natal Nines</span> */}
                 </Link>
               </Div>
