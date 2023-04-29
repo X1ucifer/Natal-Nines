@@ -1329,8 +1329,8 @@ label {
     margin: 0;
     position: relative;
     z-index: 10;
-    font-weight: 700;
-    // font-size: 120px;
+    font-weight: 600;
+    font-size: 26px;
     line-height: 1.25em;
     color: #fefefe;
     display: inline-flex;
@@ -1449,7 +1449,7 @@ label {
 
 @media screen and (max-width: 1540px) {
   .cs-case_study .cs-case_study_title {
-    font-size: 35px;
+    font-size: 24px;
     padding: 40px 120px;
   }
 }
@@ -1585,7 +1585,7 @@ label {
     position: relative;
     padding: 80px 70px;
     .cs-case_study_title {
-      font-size: 26px;
+      font-size: 18px;
       padding: 25px 45px;
     }
   }
@@ -1609,7 +1609,7 @@ label {
   .cs-case_study {
     padding: 80px 12px;
     .cs-case_study_title {
-      font-size: 23px;
+      font-size: 18px;
       padding: 25px 25px;
     }
   }
@@ -1640,7 +1640,7 @@ label {
     padding: 10px;
   }
   .cs-case_study .cs-case_study_title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .cs-page_heading.cs-style1 {
     .breadcrumb {

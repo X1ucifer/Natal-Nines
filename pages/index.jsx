@@ -48,7 +48,7 @@ export default function CreativePortfolio() {
       subtitle: 'Mobile App Development',
       btnText: 'See Details',
       btnLink: '/mobile-application-development',
-      imageUrl: '/images/mobileapp.jpg',
+      imageUrl: '/mobile/1.jpg',
       category: 'Mobile App',
     },
     {

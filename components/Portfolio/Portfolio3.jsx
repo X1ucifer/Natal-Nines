@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Button from '../Button';
 import Div from '../Div';
 import Spacing from '../Spacing';
+import Image from 'next/image'
+
 
 export default function Portfolio3({
   title,
@@ -39,7 +41,16 @@ export default function Portfolio3({
             >
               <h3 className="cs-portfolio_img_title">{category}</h3>
               <Div className="cs-portfolio_img_in cs-shine_hover_1 cs-radius_5">
-                <img src={imageUrl} alt="Portfolio" className="cs-w100" />
+                {/* <img src={imageUrl} alt="Portfolio" className="cs-w100" /> */}
+                <Image
+                  src={imageUrl}
+                  alt='user profile picture'
+                  width={700}
+                  height={700}
+                  quality={80}
+                  loading='eager'
+
+                />
               </Div>
             </Div>
           </Div>
