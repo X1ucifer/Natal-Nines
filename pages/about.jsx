@@ -13,19 +13,19 @@ export default function About() {
   const funfaceData = [
     {
       title: 'Global Happy Clients',
-      factNumber: '10K',
+      factNumber: '5K',
     },
     {
       title: 'Project Completed',
-      factNumber: '35K',
+      factNumber: '35',
     },
     {
-      title: 'Team Members',
+      title: 'Support Projects',
       factNumber: '245',
     },
     {
       title: 'Digital products',
-      factNumber: '550',
+      factNumber: '50',
     },
   ];
   return (
@@ -96,7 +96,7 @@ export default function About() {
         <Div className="container">
           <FunFact
             title="Our fun fact"
-            subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+            subtitle="At Natal Nine IT Solutions, we believe that technology should empower people, not complicate their lives. That's why we're committed to delivering simple, effective solutions that help our clients achieve their goals and succeed in today's digital world."
             data={funfaceData}
           />
         </Div>

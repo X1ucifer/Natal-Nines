@@ -108,36 +108,43 @@ export default function CaseStudyDetails() {
                                 <h3 className="cs-font_30 cs-m0">What Are Progressive Web Apps (PWAs)?</h3>
                                 <Spacing lg="45" md="30" />
                                 <p className="cs-m0">
-                                PWAs are a type of web application that is relatively modern and combines features of native and hybrid apps. While PWAs are accessed through a web browser like any other web app, users must download and install them like a mobile app. However, this is a benefit as PWAs can be quickly accessible from the user's device. The Google Play Store and the Microsoft Store both support PWAs, so they can function as mobile apps in some ways. PWAs have the advantage of launching directly from a user's device without opening a browser, and they can send push notifications and work offline while loading quickly.
+                                    PWAs are a type of web application that is relatively modern and combines features of native and hybrid apps. While PWAs are accessed through a web browser like any other web app, users must download and install them like a mobile app. However, this is a benefit as PWAs can be quickly accessible from the user's device. The Google Play Store and the Microsoft Store both support PWAs, so they can function as mobile apps in some ways. PWAs have the advantage of launching directly from a user's device without opening a browser, and they can send push notifications and work offline while loading quickly.
                                 </p>
                             </Div>
                         </Div>
                         <Spacing lg="150" md="80" />
+                        <Div className="row align-items-center">
+
+                            <Div className="col-lg-5 offset-lg-1">
+                                <h3 className="cs-font_30 cs-m0">Types of Web Applications</h3>
+                                <Spacing lg="45" md="30" />
+                                <p className="cs-m0">
+                                    Enterprise web apps,
+                                    Web portals,
+                                    Customer-facing apps,
+                                    Supply chain management web apps,
+                                    Online services,
+                                    Ecommerce Website,
+                                    Web apps for healthcare,
+                                    Analytics web apps.
+                                </p>
+                            </Div>
+                            <Div className="col-lg-6 text-center">
+                                <Div className="cs-portfolio_img_in cs-shine_hover_1 rounded-circle">
+                                    <img
+                                        src="/images/sss1.png"
+                                        alt="Case study"
+                                        className="w-100"
+                                    />
+                                </Div>
+                                <Spacing lg="0" md="40" />
+                            </Div>
+                        </Div>
                     </Div>
                 </Div>
-                <Spacing lg="140" md="80" />
-                <Div className="container text-center">
-                    <Div className="row col-lg-10 offset-lg-1">
-                        <h2 className="cs-font_38 cs-m0">Types of Web Applications</h2>
-                        <Div className="container text-start" style={{ paddingLeft: "350px" }}>
-                        <Spacing lg="60" md="45" />
-                        <p className="cs-m0">
-                        <li>Enterprise web apps</li> 
-                        <li>Web portals</li> 
-                        <li>Customer-facing apps</li> 
-                        <li>Supply chain management web apps</li> 
-                        <li>Online services</li> 
-                        <li>Ecommerce Website</li> 
-                        <li>Web apps for healthcare</li> 
-                        <li>Analytics web apps</li> 
-                   
-
-
-                        </p>
-                    </Div>
-                    </Div>
-                </Div>
-                <Spacing lg="145" md="80" />
+                
+                
+               
                 {/* Start CTA Section */}
                 <Div className="container">
                     <Cta

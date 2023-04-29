@@ -11,7 +11,7 @@ export default function SocialWidget() {
       <Link href="https://twitter.com/natalnine" className="cs-center">
         <Icon icon="fa6-brands:twitter" />
       </Link>
-      <Link href="/https://www.youtube.com/@NatalNine" className="cs-center">
+      <Link href="https://www.youtube.com/@NatalNine" className="cs-center">
         <Icon icon="fa6-brands:youtube" />
       </Link>
       <Link href="https://www.instagram.com/natalnine/" className="cs-center">
