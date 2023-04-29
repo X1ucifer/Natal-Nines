@@ -114,7 +114,7 @@ export default function Home() {
           <FunFact
             variant="cs-type1"
             title="Our fun fact"
-            subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+            subtitle="At Natal Nine IT Solutions, we believe that technology should empower people, not complicate their lives. That's why we're committed to delivering simple, effective solutions that help our clients achieve their goals and succeed in today's digital world."
             data={funfaceData}
           />
         </div>
