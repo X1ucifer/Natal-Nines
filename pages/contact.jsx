@@ -8,8 +8,7 @@ import SectionHeading from '../components/SectionHeading';
 import Spacing from '../components/Spacing';
 import ContactInfoWidget from '../components/Widget/ContactInfoWidget';
 import emailjs from 'emailjs-com';
-import { useRouter } from 'next/router';
-
+import { toast } from 'react-toastify';
 
 export default function Contact() {
   const [fullName, setFullName] = useState('');
@@ -17,7 +16,6 @@ export default function Contact() {
   const [projectType, setProjectType] = useState('');
   const [mobile, setMobile] = useState('');
   const [message, setMessage] = useState('');
-  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,7 +27,7 @@ export default function Contact() {
       mobile,
       message,
     };
-// dont change code
+
     try {
       const response = await emailjs.send(
         'service_xx9td1o',
@@ -40,8 +38,7 @@ export default function Contact() {
 
       console.log(response);
 
-      alert('Message sent successfully');
-      router.push('/');
+      toast('Message sent successfully');
     } catch (error) {
       console.error(error);
       alert('An error occurred. Please try again later.');
