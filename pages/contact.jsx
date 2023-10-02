@@ -7,118 +7,42 @@ import PageHeading from '../components/PageHeading';
 import SectionHeading from '../components/SectionHeading';
 import Spacing from '../components/Spacing';
 import ContactInfoWidget from '../components/Widget/ContactInfoWidget';
-import axios from 'axios';
-import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
-import { useRouter } from "next/router";
-import {
-  Button,
-  Cascader,
-  Checkbox,
-  Col,
-  Form,
-  Input,
-  InputNumber,
-  Row,
-  Select,
-} from "antd";
-
-const { Option } = Select;
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [projectType, setProjectType] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [message, setMessage] = useState('');
 
-
-  // const [fullName, setFullName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [projectType, setProjectType] = useState('');
-  // const [mobile, setMobile] = useState('');
-  // const [message, setMessage] = useState('');
-
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const formData = { fullName, email, projectType, mobile, message };
-
-  //   console.log(formData)
-    
-
-  //   axios.post('/api/send_mail', {
-  //     fullName,
-  //     receiver:email,
-  //     projectType,
-  //     mobile,
-  //     message,
-  //   })
-  //     .then((response) => {
-  //       console.log(response.data);
-  //       alert('Message sent successfully');
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //       alert('An error occurred. Please try again later.');
-  //     });
-
-
-  // }
-
-  const router = useRouter();
-  const [form] = Form.useForm();
-  const [value, setValue] = React.useState("");
-  const [mail, setMail] = React.useState("");
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-  const handleMail = (event) => {
-    setMail(event.target.value);
-  };
-  const sendEmail = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_xx9td1o",
-        "template_xno7kh2",
-        e.target,
-        "KBrOj98vL5IH-kEz2"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
+    const templateParams = {
+      fullName,
+      email,
+      projectType,
+      mobile,
+      message,
+    };
+
+    try {
+      const response = await emailjs.send(
+        'service_xx9td1o',
+        'template_xno7kh2',
+        templateParams,
+        'xV5WZHB4iJ9ZGgQ32'
       );
-    e.target.reset();
 
-    toast.success("Request has been submitted successfully");
+      console.log(response);
 
-    router.push("/#");
+      alert('Message sent successfully');
+    } catch (error) {
+      console.error(error);
+      alert('An error occurred. Please try again later.');
+    }
   };
-
-  const onFinish = (values) => {
-    emailjs
-      .sendForm(
-        "service_xx9td1o",
-        "template_xno7kh2",
-        e.target,
-        "KBrOj98vL5IH-kEz2"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    // values.reset()
-
-    console.log("Received values of form: ", values);
-  };
-
-
-
 
   return (
     <>
@@ -138,7 +62,7 @@ export default function Contact() {
           <Div className="row">
             <Div className="col-lg-6">
               <SectionHeading
-                title="Looking forward to partner your growth ?"
+                title="Looking forward to partner your growth ?"
                 subtitle="Getting Touch"
               />
               <Spacing lg="55" md="30" />
@@ -146,69 +70,38 @@ export default function Contact() {
               <Spacing lg="0" md="50" />
             </Div>
             <Div className="col-lg-6">
-              <form action="#" className="row" onSubmit={sendEmail}>
+              <form action="#" className="row" onSubmit={handleSubmit}>
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Full Name*</label>
-                  <input 
-                  className="form-control"
-                      placeholder="Name... *"
-                      name="name"
-                      required />
-
+                  <input type="text" className="cs-form_field" value={fullName} onChange={(e) => setFullName(e.target.value)} />
                   <Spacing lg="20" md="20" />
                 </Div>
-
-
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Email*</label>
-
-                  <input
-                  className="form-control"
-                      placeholder="Email... *"
-                      required
-                      name="email"
-                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    />
+                  <input type="text" className="cs-form_field" value={email} onChange={(e) => setEmail(e.target.value)} />
                   <Spacing lg="20" md="20" />
                 </Div>
-
-
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Project Type*</label>
-                  <input
-                   className=""
-                      placeholder="Requirements"
-                      name="companyname"
-                    />
+                  <input type="text" className="cs-form_field" value={projectType} onChange={(e) => setProjectType(e.target.value)} />
                   <Spacing lg="20" md="20" />
                 </Div>
-
-
-
                 <Div className="col-sm-6">
-                  <label 
-                  className=""
-                      input
-                      type="number"
-                      placeholder="Phone *"
-                      name="phnumber"
-                      required
-                      // pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-                    />
+                  <label className="cs-primary_color">Mobile*</label>
+                  <input type="text" className="cs-form_field" value={mobile} onChange={(e) => setMobile(e.target.value)} />
                   <Spacing lg="20" md="20" />
                 </Div>
-                
                 <Div className="col-sm-12">
                   <label className="cs-primary_color">Message*</label>
-                  <textarea cols="30" rows="7" className="form-control" name="companyname"></textarea>
-
+                  <textarea cols="30" rows="7" className="cs-form_field" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                   <Spacing lg="25" md="25" />
                 </Div>
                 <Div className="col-sm-12">
-                  <button className="cs-btn cs-style1" type="submit" 
+                  <button
+                    className="cs-btn cs-style1"
+                    type="submit"
+                    disabled={!fullName || !email || !projectType || !mobile || !message}
                   >
-                  {/* disabled={!fullName || !email || !projectType || !mobile || !message} */}
-
                     <span>Send Message</span>
                     <Icon icon="bi:arrow-right" />
                   </button>
@@ -219,8 +112,6 @@ export default function Contact() {
         </Div>
         <Spacing lg="150" md="80" />
         <Div className="cs-google_map">
-
-
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26766.320935182255!2d77.19933597746798!3d8.309598278932361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b045516f27e1797%3A0x9eaf4bffb1fa19c1!2sMarthandam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1681044397227!5m2!1sen!2sin"
             allowFullScreen
