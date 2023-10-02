@@ -117,20 +117,7 @@ export default function Contact() {
     console.log("Received values of form: ", values);
   };
 
-  const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
-        <Option value="91">+91</Option>
-        <Option value="971">+971</Option>
-      </Select>
-    </Form.Item>
-  );
+
 
 
   return (
@@ -200,7 +187,7 @@ export default function Contact() {
 
                 <Div className="col-sm-6">
                   <label 
-                  className="form-control"
+                  className=""
                       input
                       type="number"
                       placeholder="Phone *"
