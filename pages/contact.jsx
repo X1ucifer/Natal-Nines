@@ -8,43 +8,129 @@ import SectionHeading from '../components/SectionHeading';
 import Spacing from '../components/Spacing';
 import ContactInfoWidget from '../components/Widget/ContactInfoWidget';
 import axios from 'axios';
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { useRouter } from "next/router";
+import {
+  Button,
+  Cascader,
+  Checkbox,
+  Col,
+  Form,
+  Input,
+  InputNumber,
+  Row,
+  Select,
+} from "antd";
 
+const { Option } = Select;
 
 export default function Contact() {
 
 
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [projectType, setProjectType] = useState('');
-  const [mobile, setMobile] = useState('');
-  const [message, setMessage] = useState('');
+  // const [fullName, setFullName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [projectType, setProjectType] = useState('');
+  // const [mobile, setMobile] = useState('');
+  // const [message, setMessage] = useState('');
 
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = { fullName, email, projectType, mobile, message };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const formData = { fullName, email, projectType, mobile, message };
 
-    console.log(formData)
+  //   console.log(formData)
     
 
-    axios.post('/api/send_mail', {
-      fullName,
-      receiver:email,
-      projectType,
-      mobile,
-      message,
-    })
-      .then((response) => {
-        console.log(response.data);
-        alert('Message sent successfully');
-      })
-      .catch((error) => {
-        console.log(error);
-        alert('An error occurred. Please try again later.');
-      });
+  //   axios.post('/api/send_mail', {
+  //     fullName,
+  //     receiver:email,
+  //     projectType,
+  //     mobile,
+  //     message,
+  //   })
+  //     .then((response) => {
+  //       console.log(response.data);
+  //       alert('Message sent successfully');
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //       alert('An error occurred. Please try again later.');
+  //     });
 
 
-  }
+  // }
+
+  const router = useRouter();
+  const [form] = Form.useForm();
+  const [value, setValue] = React.useState("");
+  const [mail, setMail] = React.useState("");
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+  const handleMail = (event) => {
+    setMail(event.target.value);
+  };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_xx9td1o",
+        "template_xno7kh2",
+        e.target,
+        "KBrOj98vL5IH-kEz2"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+
+    toast.success("Request has been submitted successfully");
+
+    router.push("/#");
+  };
+
+  const onFinish = (values) => {
+    emailjs
+      .sendForm(
+        "service_xx9td1o",
+        "template_xno7kh2",
+        e.target,
+        "KBrOj98vL5IH-kEz2"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    // values.reset()
+
+    console.log("Received values of form: ", values);
+  };
+
+  const prefixSelector = (
+    <Form.Item name="prefix" noStyle>
+      <Select
+        style={{
+          width: 70,
+        }}
+      >
+        <Option value="86">+86</Option>
+        <Option value="87">+87</Option>
+        <Option value="91">+91</Option>
+        <Option value="971">+971</Option>
+      </Select>
+    </Form.Item>
+  );
 
 
   return (
@@ -73,37 +159,69 @@ export default function Contact() {
               <Spacing lg="0" md="50" />
             </Div>
             <Div className="col-lg-6">
-              <form action="#" className="row" onSubmit={handleSubmit}>
+              <form action="#" className="row" onSubmit={sendEmail}>
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Full Name*</label>
-                  <input type="text" className="cs-form_field" value={fullName} onChange={(e) => setFullName(e.target.value)} />
+                  <input 
+                  className="form-control"
+                      placeholder="Name... *"
+                      name="name"
+                      required />
 
                   <Spacing lg="20" md="20" />
                 </Div>
+
+
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Email*</label>
-                  <input type="text" className="cs-form_field" value={email} onChange={(e) => setEmail(e.target.value)} />
+
+                  <input
+                  className="form-control"
+                      placeholder="Email... *"
+                      required
+                      name="email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    />
                   <Spacing lg="20" md="20" />
                 </Div>
+
+
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Project Type*</label>
-                  <input type="text" className="cs-form_field" value={projectType} onChange={(e) => setProjectType(e.target.value)} />
+                  <input
+                   className=""
+                      placeholder="Requirements"
+                      name="companyname"
+                    />
                   <Spacing lg="20" md="20" />
                 </Div>
+
+
+
                 <Div className="col-sm-6">
-                  <label className="cs-primary_color">Mobile*</label>
-                  <input type="text" className="cs-form_field" value={mobile} onChange={(e) => setMobile(e.target.value)} />
+                  <label 
+                  className="form-control"
+                      input
+                      type="number"
+                      placeholder="Phone *"
+                      name="phnumber"
+                      required
+                      // pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                    />
                   <Spacing lg="20" md="20" />
                 </Div>
+                
                 <Div className="col-sm-12">
                   <label className="cs-primary_color">Message*</label>
-                  <textarea cols="30" rows="7" className="cs-form_field" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                  <textarea cols="30" rows="7" className="form-control" name="companyname"></textarea>
 
                   <Spacing lg="25" md="25" />
                 </Div>
                 <Div className="col-sm-12">
-                  <button className="cs-btn cs-style1" type="submit" disabled={!fullName || !email || !projectType || !mobile || !message}
+                  <button className="cs-btn cs-style1" type="submit" 
                   >
+                  {/* disabled={!fullName || !email || !projectType || !mobile || !message} */}
+
                     <span>Send Message</span>
                     <Icon icon="bi:arrow-right" />
                   </button>
