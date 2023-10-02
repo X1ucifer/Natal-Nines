@@ -26,7 +26,7 @@ export default function Contact() {
       mobile,
       message,
     };
-
+// dont change code
     try {
       const response = await emailjs.send(
         'service_xx9td1o',
